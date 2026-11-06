@@ -10,3 +10,4 @@ This document details how model releases are prepared, signed, and published to 
 5. **Catalog Update:** Update `catalog/catalog.json` and sign with `python scripts/sign_catalog.py catalog/catalog.json <private_key.pem>`.
 6. **Publishing Release:** Run `scripts/publish_release.ps1 -Tag <tag> -Artifacts <files...>`.
 7. **In-App Verification:** Confirm that the LearnMate AI application retrieves the catalog and downloads the release assets successfully.
+

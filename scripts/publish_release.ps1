@@ -17,3 +17,4 @@ param(
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 python "$scriptDir\publish_release.py" --tag $Tag --name $Name --body $Body --files $Files
+

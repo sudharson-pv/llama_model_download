@@ -21,3 +21,4 @@ To export Meta Llama 3.2 1B Instruct:
 - Format must be ExecuTorch PTE. Never rename GGUF files to PTE.
 - The first 4 bytes must not match `GGUF` (`0x47 0x47 0x55 0x46`).
 - Always calculate SHA-256 and exact byte size using `scripts/calculate_hashes.py`.
+
