@@ -1,0 +1,42 @@
+{
+  "compatibility_rules": {
+    "minimum_android_sdk": 28,
+    "target_android_sdk": 35,
+    "supported_architectures": ["arm64-v8a", "x86_64"],
+    "native_engine": "ExecuTorch 1.4.0",
+    "hardware_tiers": {
+      "tier_low_end": {
+        "max_ram_bytes": 3758096384,
+        "supported_models": [],
+        "verdict": "Incompatible — Insufficient RAM for LLM memory mapping"
+      },
+      "tier_mid_range": {
+        "min_ram_bytes": 3758096384,
+        "max_ram_bytes": 8589934592,
+        "supported_models": ["meta-llama-3.2-1b-instruct-8da4w"],
+        "recommended_model": "meta-llama-3.2-1b-instruct-8da4w",
+        "verdict": "Compatible with Llama 3.2 1B (Verified on Moto G54 5G)"
+      },
+      "tier_high_end": {
+        "min_ram_bytes": 8589934592,
+        "max_ram_bytes": 12884901888,
+        "supported_models": [
+          "meta-llama-3.2-1b-instruct-8da4w",
+          "meta-llama-3.2-3b-instruct-8da4w"
+        ],
+        "recommended_model": "meta-llama-3.2-1b-instruct-8da4w",
+        "verdict": "Compatible with Llama 3.2 1B & 3B"
+      },
+      "tier_flagship": {
+        "min_ram_bytes": 12884901888,
+        "supported_models": [
+          "meta-llama-3.2-1b-instruct-8da4w",
+          "meta-llama-3.2-3b-instruct-8da4w",
+          "meta-llama-3.1-8b-instruct-4da4w"
+        ],
+        "recommended_model": "meta-llama-3.2-3b-instruct-8da4w",
+        "verdict": "Compatible with all catalog models including 8B"
+      }
+    }
+  }
+}

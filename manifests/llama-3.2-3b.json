@@ -1,0 +1,37 @@
+{
+  "formatVersion": "1.0.0",
+  "manifestVersion": 1,
+  "modelId": "meta-llama-3.2-3b-instruct-8da4w",
+  "displayName": "Meta Llama 3.2 3B Instruct",
+  "modelFamily": "Llama 3.2",
+  "modelVersion": "1.0.0",
+  "description": "High-accuracy on-device instruction-tuned model for high-memory mobile devices (6GB+ RAM).",
+  "modelFileName": "llama3_2_3b_8da4w.pte",
+  "modelSizeBytes": 1984524288,
+  "modelSha256": "d8e3b7b209d81745e69e4689dbb1f48fa2851498188151f1295b77e8a9f2495b",
+  "tokenizerFileName": "tokenizer.model",
+  "tokenizerSizeBytes": 2183982,
+  "tokenizerSha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+  "format": "ExecuTorch PTE",
+  "quantization": "8da4w + Embedding (8,32)",
+  "targetBackend": "XNNPACK CPU",
+  "minRuntimeVersion": "1.4.0",
+  "supportedAbis": [
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "minApiLevel": 28,
+  "minRamBytes": 6291456000,
+  "minStorageBytes": 4194304000,
+  "license": "Meta Llama 3.2 Community License Agreement",
+  "attribution": "Built with Meta Llama 3.2. Copyright (c) Meta Platforms, Inc.",
+  "publisherKeyId": "learnmate_official_2026",
+  "signatureTimestampEpochSec": 1762400000,
+  "expiresTimestampEpochSec": 2077680000,
+  "releaseTag": "llama-3.2-3b-v1",
+  "downloadUrls": {
+    "model": "https://github.com/sudharson-pv/llama_model_download/releases/download/llama-3.2-3b-v1/llama3_2_3b_8da4w.pte",
+    "tokenizer": "https://github.com/sudharson-pv/llama_model_download/releases/download/llama-3.2-3b-v1/tokenizer.model"
+  },
+  "signatureBase64": "lAVDx76wMmuUVO+WTbVBgUuxD8cIAS+5/F73jujNy9Zgz6ULnliALBM49aVj1e7ViM/b1Wht5x6pw9oUl21PDw=="
+}

@@ -1,0 +1,27 @@
+{
+  "distribution_version": "1.0.0",
+  "minimum_supported_app_version": "1.0.0",
+  "releases": [
+    {
+      "release_tag": "llama-3.2-1b-v1",
+      "model_id": "meta-llama-3.2-1b-instruct-8da4w",
+      "model_version": "1.0.0",
+      "published_date": "2026-11-06",
+      "status": "production"
+    },
+    {
+      "release_tag": "llama-3.2-3b-v1",
+      "model_id": "meta-llama-3.2-3b-instruct-8da4w",
+      "model_version": "1.0.0",
+      "published_date": "2026-11-06",
+      "status": "staged"
+    },
+    {
+      "release_tag": "llama-3.1-8b-v1",
+      "model_id": "meta-llama-3.1-8b-instruct-4da4w",
+      "model_version": "1.0.0",
+      "published_date": "2026-11-06",
+      "status": "experimental"
+    }
+  ]
+}
