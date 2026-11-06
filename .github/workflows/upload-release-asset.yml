@@ -1,0 +1,33 @@
+name: Upload Model to GitHub Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'models/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  upload-asset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository with Git LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Verify Model Integrity
+        run: |
+          ls -lh models/llama3_2_1b_8da4w.pte
+          sha256sum models/llama3_2_1b_8da4w.pte
+
+      - name: Attach Model Binary to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload llama-3.2-1b-v1 models/llama3_2_1b_8da4w.pte --clobber
+          echo "Asset successfully uploaded to release llama-3.2-1b-v1!"
+
